@@ -1,0 +1,16 @@
+server:
+  port: 6001
+
+spring:
+  application:
+    name: cloud-cousumer-openfeign-order-service
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://eureka-7001:7001/eureka/,http://eureka-7002:7002/eureka/
+
