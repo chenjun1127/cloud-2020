@@ -24,7 +24,7 @@ public class MyFilterGateway implements GlobalFilter, Ordered {
 
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
-        logger.info("Come in MyLogFilterGateway: " + new Date());
+        logger.info("Come in MyFilterGateway: " + new Date());
         String username = exchange.getRequest().getQueryParams().getFirst("username");
         if (StringUtils.isBlank(username)) {
             logger.info("用户名为空，非法用户!╥﹏╥...");
