@@ -41,4 +41,9 @@ public class PaymentController {
         log.info("***result===" + result);
         return result;
     }
+
+    @GetMapping("/payment/hystrix/port")
+    public String getServerPort(){
+        return paymentService.getServerPort(serverPort);
+    }
 }

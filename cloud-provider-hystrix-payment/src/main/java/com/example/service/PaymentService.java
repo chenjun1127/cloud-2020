@@ -16,6 +16,10 @@ import java.util.concurrent.TimeUnit;
  */
 @Service
 public class PaymentService {
+    public String getServerPort(String port) {
+        return port;
+    }
+
     public String paymentInfoOk(Integer id) {
         return "线程池：" + Thread.currentThread().getName() + " paymentInfoOk,id:" + id;
     }

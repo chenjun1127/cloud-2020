@@ -9,3 +9,4 @@ cloud微服务
 * [6002](http://localhost:6002/) order消费者订单服务（cloud-consumer-openfeign-hystrix-order）
 * [8001](http://localhost:8001/) payment提供者支付服务（cloud-provider-payment）
 * [8002](http://localhost:8002/) payment提供者支付服务（cloud-provider-hystrix-payment）
+* [9527](http://localhost:9527/) 网关服务（cloud-gateway）

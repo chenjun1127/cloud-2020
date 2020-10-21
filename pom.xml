@@ -16,6 +16,7 @@
         <module>cloud-consumer-openfeign-order</module>
         <module>cloud-provider-hystrix-payment</module>
         <module>cloud-consumer-openfeign-hystrix-order</module>
+        <module>cloud-gateway</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
