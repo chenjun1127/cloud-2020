@@ -1,0 +1,18 @@
+server:
+  port: 9850
+
+spring:
+  application:
+    name: cloud-config-server-center
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/chenjun1127/springcloud-config.git
+          search-paths: springcloud-config # 搜索目录
+      label: master # 读取分支
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-7001:7001/eureka/,http://eureka-7002:7002/eureka/
