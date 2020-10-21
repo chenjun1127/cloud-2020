@@ -19,8 +19,8 @@ import java.util.Date;
  * @Date: 2020/10/21 10:53
  */
 @Component
-public class MyLogFilterGateway implements GlobalFilter, Ordered {
-    Logger logger = LoggerFactory.getLogger(MyLogFilterGateway.class);
+public class MyFilterGateway implements GlobalFilter, Ordered {
+    Logger logger = LoggerFactory.getLogger(MyFilterGateway.class);
 
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
