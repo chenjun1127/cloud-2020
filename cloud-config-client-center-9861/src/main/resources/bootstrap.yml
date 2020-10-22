@@ -1,0 +1,29 @@
+server:
+  port: 9861
+spring:
+  application:
+    name: cloud-conifg-client
+  cloud:
+    # config客户端配置
+    config:
+      label: master # 分支名称
+      name: config # 配置文件名称
+      profile: dev # 读取后续名称
+      uri: http://localhost:9850 # 配置中心地址
+  rabbitmq: #rabbitmq配置，15672是web管理界面的端口，5672是mq访问的端口
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-7001:7001/eureka/,http://eureka-7002:7002/eureka/
+# 暴露监控端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+

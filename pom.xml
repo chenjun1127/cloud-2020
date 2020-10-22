@@ -18,7 +18,8 @@
         <module>cloud-consumer-openfeign-hystrix-order</module>
         <module>cloud-gateway</module>
         <module>cloud-config-server-center</module>
-        <module>cloud-config-client-center</module>
+        <module>cloud-config-client-center-9860</module>
+        <module>cloud-config-client-center-9861</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

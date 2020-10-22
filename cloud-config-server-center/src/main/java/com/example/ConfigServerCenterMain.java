@@ -5,9 +5,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.config.server.EnableConfigServer;
 
 /**
- * @Description:
+ * @Description: 配置中心服务端
  * @Author: chenjun
- * @Date: 2020/10/21 11:39
+ * @Date: 2020/10/21 16:48
  */
 @SpringBootApplication
 @EnableConfigServer
