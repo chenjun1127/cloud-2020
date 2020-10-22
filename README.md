@@ -10,3 +10,6 @@ cloud微服务
 * [8001](http://localhost:8001/) payment提供者支付服务（cloud-provider-payment）
 * [8002](http://localhost:8002/) payment提供者支付服务（cloud-provider-hystrix-payment）
 * [9527](http://localhost:9527/) 网关服务（cloud-gateway）
+* [9850](http://localhost:9850/) 配置中心服务端（cloud-config-server-center）
+* [9860](http://localhost:9860/) 配置中心客户端一（cloud-config-client-center-9860）
+* [9861](http://localhost:9861/) 配置中心客户端二（cloud-config-client-center-9861）
