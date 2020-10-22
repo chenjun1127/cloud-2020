@@ -20,6 +20,9 @@
         <module>cloud-config-server-center</module>
         <module>cloud-config-client-center-9860</module>
         <module>cloud-config-client-center-9861</module>
+        <module>cloud-stream-rabbitmq-provider</module>
+        <module>cloud-stream-rabbitmq-consumer-8802</module>
+        <module>cloud-stream-rabbitmq-consumer-8803</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

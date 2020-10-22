@@ -1,0 +1,27 @@
+server:
+  port: 8801
+spring:
+  application:
+    name: cloud-stream-rabbitmq-provider
+  cloud:
+    stream:
+      binders: # 这是一组binder的集合，这里配置了一个名为defaultRabbit的binder
+        defaultRabbit:
+          type: rabbit
+          environment:
+            spring:
+              rabbitmq:
+                host: localhost
+                port: 5672
+                username: guest
+                password: guest
+      bindings:
+        outPut: # 通道名称
+          destination: test.rabbitmq.cloud
+          content-type: application/json
+          default-binder: defaultRabbit
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-7001:7001/eureka/,http://eureka-7002:7002/eureka/

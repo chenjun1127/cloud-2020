@@ -23,3 +23,6 @@
 curl -X POST "http://localhost:9850/actuator/bus-refresh"
 ```
 效果：一次修改，广播通知，处处生效。
+
+### spring-cloud-starter-stream-rabbit
+注意：不同的组是可以消费的，同一个组内会发生竞争关系，只有其中一个可以消费。
