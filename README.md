@@ -1,5 +1,5 @@
 # cloud-2020
-cloud微服务
+cloud微服务，[相关笔记](https://github.com/chenjun1127/cloud-2020/blob/master/notes.md)
 
 相关端口及服务：
 * [7001](http://localhost:7001/) eureka集群1
