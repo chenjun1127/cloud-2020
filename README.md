@@ -13,6 +13,6 @@ cloud微服务，[相关笔记](https://github.com/chenjun1127/cloud-2020/blob/m
 * [9850](http://localhost:9850/) 配置中心服务端（cloud-config-server-center）
 * [9860](http://localhost:9860/) 配置中心客户端一（cloud-config-client-center-9860）
 * [9861](http://localhost:9861/) 配置中心客户端二（cloud-config-client-center-9861）
-* [8801](http://localhost:8801/) SpringCloud-Stream整合RabbitMQ提供者一（cloud-stream-rabbitmq-provider-8801）
+* [8801](http://localhost:8801/) SpringCloud-Stream整合RabbitMQ提供者（cloud-stream-rabbitmq-provider-8801）
 * [8802](http://localhost:8802/) SpringCloud-Stream整合RabbitMQ消费者一（cloud-stream-rabbitmq-consumer-8802）
 * [8803](http://localhost:8803/) SpringCloud-Stream整合RabbitMQ消费者二（cloud-stream-rabbitmq-consumer-8803）
