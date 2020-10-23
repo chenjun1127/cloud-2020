@@ -16,3 +16,6 @@ cloud微服务，[相关笔记](https://github.com/chenjun1127/cloud-2020/blob/m
 * [8801](http://localhost:8801/) SpringCloud-Stream整合RabbitMQ提供者（cloud-stream-rabbitmq-provider-8801）
 * [8802](http://localhost:8802/) SpringCloud-Stream整合RabbitMQ消费者一（cloud-stream-rabbitmq-consumer-8802）
 * [8803](http://localhost:8803/) SpringCloud-Stream整合RabbitMQ消费者二（cloud-stream-rabbitmq-consumer-8803）
+* [6604](http://localhost:6604/) nacos服务消费者（cloud-alibaba-consumer-order）
+* [9001](http://localhost:9001/) nacos服务提供者一（cloud-alibaba-provider-payment）
+* [9002](http://localhost:9002/) nacos服务提供者二（cloud-alibaba-provider-payment）
