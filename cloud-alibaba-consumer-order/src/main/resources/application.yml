@@ -1,0 +1,10 @@
+server:
+  port: 6004
+spring:
+  application:
+    name: cloud-alibaba-consumer-order
+  cloud:
+    nacos:
+      discovery:
+        server-addr: http://119.29.165.98:8848
+
