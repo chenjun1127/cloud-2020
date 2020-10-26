@@ -26,3 +26,9 @@ curl -X POST "http://localhost:9850/actuator/bus-refresh"
 
 ### spring-cloud-starter-stream-rabbit
 注意：不同的组是可以消费的，同一个组内会发生竞争关系，只有其中一个可以消费。
+
+### nacos配置中心dataId完整格式如下：
+```
+${prefix}-${spring.profile.active}.${file-extension}
+```
+prefix默认为spring.application.name的值，也可以通过spring.cloud.nacos.config.prefix来配置。注意：当spring.profile.active为空时，对应的连接符-也将不存在，dataId的拼接格式变成${prefix}.${file.extension}。

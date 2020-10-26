@@ -1,0 +1,13 @@
+server:
+  port: 3750
+spring:
+  application:
+    name: cloud-alibaba-nacos-config
+  cloud:
+    nacos:
+      discovery:
+        server-addr: http://119.29.165.98:8848
+      config:
+        server-addr: http://119.29.165.98:8848
+        file-extension: yaml
+        group: DEFAULT_GROUP # 默认为DEFAULT_GROUP，也可以新建自定义组（命名空间）

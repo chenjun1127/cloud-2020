@@ -19,3 +19,4 @@ cloud微服务，[相关笔记](https://github.com/chenjun1127/cloud-2020/blob/m
 * [6604](http://localhost:6604/) nacos服务消费者（cloud-alibaba-consumer-order）
 * [9001](http://localhost:9001/) nacos服务提供者一（cloud-alibaba-provider-payment）
 * [9002](http://localhost:9002/) nacos服务提供者二（cloud-alibaba-provider-payment）
+* [3750](http://localhost:3750/) nacos配置中心服务（cloud-alibaba-nacos-config）
