@@ -20,14 +20,14 @@ import javax.annotation.Resource;
 @RestController
 public class ConsumerOrderController {
     public static final Logger logger = LoggerFactory.getLogger(ConsumerOrderController.class);
-    public static final String serviceUrl = "cloud-alibaba-provider-payment";
+    public static final String SERVICE_URL = "cloud-alibaba-provider-payment";
 
     @Resource
     LoadBalancerClient loadBalancerClient; // 负载均衡
 
     @GetMapping("/nacos/consumer/order/{id}")
     public String getOrder(@PathVariable("id") Integer id) {
-        ServiceInstance serviceInstance = loadBalancerClient.choose(serviceUrl);
+        ServiceInstance serviceInstance = loadBalancerClient.choose(SERVICE_URL);
         String url = serviceInstance.getUri() + "/payment/nacos/" + id;
         RestTemplate restTemplate = new RestTemplate();
         String result = restTemplate.getForObject(url, String.class);
