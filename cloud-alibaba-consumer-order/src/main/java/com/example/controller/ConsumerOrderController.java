@@ -1,5 +1,6 @@
 package com.example.controller;
 
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.cloud.client.ServiceInstance;
@@ -20,6 +21,7 @@ import javax.annotation.Resource;
 public class ConsumerOrderController {
     public static final Logger logger = LoggerFactory.getLogger(ConsumerOrderController.class);
     public static final String serviceUrl = "cloud-alibaba-provider-payment";
+
     @Resource
     LoadBalancerClient loadBalancerClient; // 负载均衡
 
