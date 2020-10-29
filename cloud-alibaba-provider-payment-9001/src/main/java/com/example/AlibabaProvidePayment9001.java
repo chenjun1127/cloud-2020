@@ -11,8 +11,8 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  */
 @SpringBootApplication
 @EnableDiscoveryClient
-public class AlibabaProvidePayment9902 {
+public class AlibabaProvidePayment9001 {
     public static void main(String[] args) {
-        SpringApplication.run(AlibabaProvidePayment9902.class, args);
+        SpringApplication.run(AlibabaProvidePayment9001.class, args);
     }
 }

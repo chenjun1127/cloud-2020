@@ -7,12 +7,12 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 /**
  * @Description:
  * @Author: chenjun
- * @Date: 2020/10/22 18:03
+ * @Date: 2020/10/23 8:49
  */
 @SpringBootApplication
 @EnableDiscoveryClient
-public class AlibabaProvidePayment9901 {
+public class AlibabaConsumerSentinelOrder {
     public static void main(String[] args) {
-        SpringApplication.run(AlibabaProvidePayment9901.class, args);
+        SpringApplication.run(AlibabaConsumerSentinelOrder.class,args);
     }
 }

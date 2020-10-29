@@ -1,9 +1,8 @@
 server:
-  port: 8401
-
+  port: 6005
 spring:
   application:
-    name: cloud-alibaba-sentinel-server
+    name: cloud-alibaba-consumer-sentinel-order
   cloud:
     nacos:
       discovery:
@@ -13,18 +12,9 @@ spring:
         dashboard: localhost:8080 #配置Sentinel dashboard地址
         # 应用与sentinel交互的默认端口是8719，如果该端口被占用则会自动+1 变成 8720 ，直到找到未被占用的端口
         port: 8719
-      datasource: # 持久化
-        ds1:
-          nacos:
-            server-addr: http://119.29.165.98:8848
-            dataId: ${spring.application.name}
-            groupId: DEFAULT_GROUP
-            data-type: json
-            rule-type: flow
 
 management:
   endpoints:
     web:
       exposure:
         include: '*'
-
