@@ -7,9 +7,8 @@ import com.example.service.OrderService;
 import com.example.service.StorageService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import javax.annotation.Resource;
 
 /**
  * @Description:
@@ -19,11 +18,11 @@ import javax.annotation.Resource;
 @Service
 public class OrderServiceImpl implements OrderService {
     public static final Logger logger = LoggerFactory.getLogger(OrderServiceImpl.class);
-    @Resource
+    @Autowired
     private OrderMapper orderMapper;
-    @Resource
+    @Autowired
     private StorageService storageService;
-    @Resource
+    @Autowired
     private AccountService accountService;
 
     @Override

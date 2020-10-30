@@ -10,14 +10,17 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 /**
  * @Description:
  * @Author: chenjun
- * @Date: 2020/10/29 17:56
+ * @Date: 2020/10/30 9:55
  */
-@SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
-@EnableDiscoveryClient
-@MapperScan("com.example.mapper")
+@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
 @EnableFeignClients
+@MapperScan("com.example.mapper")
+@EnableDiscoveryClient
 public class SeataOrderMain {
     public static void main(String[] args) {
         SpringApplication.run(SeataOrderMain.class, args);
     }
 }
+
+
+

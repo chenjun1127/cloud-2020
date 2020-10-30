@@ -15,7 +15,6 @@ spring:
       discovery:
         server-addr: http://119.29.165.98:8848
 
-
 mybatis:
   mapper-locations: classpath:mapper/*.xml
   type-aliases-package: com.example.entities
@@ -25,6 +24,7 @@ mybatis:
 feign:
   hystrix:
     enabled: true
+
 
 seata:
   service:
