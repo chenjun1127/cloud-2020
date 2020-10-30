@@ -32,3 +32,6 @@ curl -X POST "http://localhost:9850/actuator/bus-refresh"
 ${prefix}-${spring.profile.active}.${file-extension}
 ```
 prefix默认为spring.application.name的值，也可以通过spring.cloud.nacos.config.prefix来配置。注意：当spring.profile.active为空时，对应的连接符-也将不存在，dataId的拼接格式变成${prefix}.${file.extension}。
+
+### SpirngCloud Alibaba Seata 分布式事务解决方案
+1.0版本之后conf文件夹下面没有db_store.sql、db_undo_log.sql文件，因此在sql文件夹下面已经放了。
