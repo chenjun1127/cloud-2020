@@ -16,9 +16,9 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @EnableFeignClients
 @MapperScan("com.example.mapper")
 @EnableDiscoveryClient
-public class SeataOrderMain {
+public class AlibabaSeataOrderMain {
     public static void main(String[] args) {
-        SpringApplication.run(SeataOrderMain.class, args);
+        SpringApplication.run(AlibabaSeataOrderMain.class, args);
     }
 }
 

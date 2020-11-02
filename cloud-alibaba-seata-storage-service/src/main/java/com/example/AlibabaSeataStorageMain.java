@@ -9,16 +9,17 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 /**
  * @Description:
  * @Author: chenjun
- * @Date: 2020/10/30 9:48
+ * @Date: 2020/10/30 9:55
  */
 @SpringBootApplication
-@EnableDiscoveryClient
-@MapperScan("com.example.mapper")
 @EnableFeignClients
-public class SeataAccountMain {
+@MapperScan("com.example.mapper")
+@EnableDiscoveryClient
+public class AlibabaSeataStorageMain {
     public static void main(String[] args) {
-        SpringApplication.run(SeataAccountMain.class,args);
+        SpringApplication.run(AlibabaSeataStorageMain.class, args);
     }
 }
+
 
 
