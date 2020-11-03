@@ -10,7 +10,7 @@ import javax.sql.DataSource;
 
 
 @Configuration
-public class DataSourceProxyConfig {
+public class DataSourceConfig {
     @Bean
     @ConfigurationProperties(prefix = "spring.datasource")
     public DataSource druidDataSource() {
