@@ -22,3 +22,6 @@ cloud微服务，[相关笔记](https://github.com/chenjun1127/cloud-2020/blob/m
 * [9002](http://localhost:9002/) nacos服务提供者二（cloud-alibaba-provider-payment）
 * [3750](http://localhost:3750/) nacos配置中心服务（cloud-alibaba-nacos-config）
 * [8401](http://localhost:8401/) alibaba-sentinel服务（cloud-alibaba-sentinel-server）
+* [2001](http://localhost:2001/) seata-order-service订单服务（cloud-seata-order-service）
+* [2001](http://localhost:2002/) seata-storage-service库存服务（cloud-seata-storage-service）
+* [2003](http://localhost:2003/) seata-account-service账户服务（cloud-seata-account-service）

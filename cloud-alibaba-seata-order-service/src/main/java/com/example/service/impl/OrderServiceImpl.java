@@ -35,6 +35,7 @@ public class OrderServiceImpl implements OrderService {
         logger.info("--->订单微服务开始调用账户，做扣减");
         accountService.decrease(order.getUserId(), order.getMoney());
         logger.info("--->修改订单状态");
+        // 修改订单状态 ，1表示已完成
         orderMapper.update(order.getUserId(), 0);
         logger.info("--->下订单结束");
     }

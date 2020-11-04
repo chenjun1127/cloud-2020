@@ -35,3 +35,8 @@ prefix默认为spring.application.name的值，也可以通过spring.cloud.nacos
 
 ### SpirngCloud Alibaba Seata 分布式事务解决方案
 1.0版本之后conf文件夹下面没有db_store.sql、db_undo_log.sql文件，因此在sql文件夹下面已经放了。
+* Transaction Coordinator (TC)： 事务协调器，维护全局事务的运行状态，负责协调并驱动全局事务的提交或回滚。
+* Transaction Manager (TM)： 控制全局事务的边界，负责开启一个全局事务，并最终发起全局提交或全局回滚的决议。
+* Resource Manager (RM)： 控制分支事务，负责分支注册、状态汇报，并接收事务协调器的指令，驱动分支（本地）事务的提交和回滚。
+
+其中，TM是一个分布式事务的发起者和终结者（@GlobalTransactional），TC负责维护分布式事务的运行状态（seata服务器），而RM则负责本地事务的运行（事务参与方）
