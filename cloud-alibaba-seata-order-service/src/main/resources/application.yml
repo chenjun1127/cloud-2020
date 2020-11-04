@@ -27,13 +27,13 @@ feign:
 
 
 seata:
+  application-id: ${spring.application.name}
+  tx-service-group: my_test_tx_group
   service:
     grouplist:
       default: 127.0.0.1:8091
     vgroup-mapping:
       my_test_tx_group: default
-  tx-service-group: my_test_tx_group
-  application-id: ${spring.application.name}
   enabled: true
   config:
     type: nacos

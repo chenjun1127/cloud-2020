@@ -3,9 +3,11 @@ package com.example.controller;
 import com.example.entities.Order;
 import com.example.service.OrderService;
 import com.example.utils.CommonResult;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import javax.annotation.Resource;
 
 /**
  * @Description:
@@ -14,13 +16,13 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class OrderController {
-    @Autowired
+    @Resource
     private OrderService orderService;
 
+    @Transactional
     @GetMapping("/order/create")
     public CommonResult<Object> create(Order order) {
         orderService.create(order);
         return new CommonResult<>(200, "订单创建成功");
     }
-
 }

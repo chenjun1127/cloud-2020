@@ -4,6 +4,7 @@ import com.example.service.AccountService;
 import com.example.utils.CommonResult;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
@@ -19,7 +20,7 @@ public class AccountController {
     @Resource
     private AccountService accountService;
 
-    @GetMapping("/account/decrease")
+    @RequestMapping("/account/decrease")
     public CommonResult<Object> decrease(@Param("userId") Long userId, @Param("money") BigDecimal money) {
         accountService.decrease(userId, money);
         return new CommonResult<>(200, "扣减账户余额成功");

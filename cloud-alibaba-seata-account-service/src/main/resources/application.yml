@@ -24,3 +24,30 @@ mybatis:
 feign:
   hystrix:
     enabled: true
+
+seata:
+  application-id: ${spring.application.name}
+  tx-service-group: my_test_tx_group
+  service:
+    grouplist:
+      default: 127.0.0.1:8091
+    vgroup-mapping:
+      my_test_tx_group: default
+  enabled: true
+  config:
+    type: nacos
+    nacos:
+      namespace:
+      server-addr: 119.29.165.98:8848
+      group: SEATA_GROUP
+      username: "nacos"
+      password: "nacos"
+  registry:
+    type: nacos
+    nacos:
+      application: seata-server
+      server-addr: 119.29.165.98:8848
+      group: SEATA_GROUP
+      namespace:
+      userName: "nacos"
+      password: "nacos"
